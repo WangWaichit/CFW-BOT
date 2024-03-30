@@ -64,7 +64,7 @@ async function sendMessage(type, ip, add_data = "") {
 			msg = `${type}\nIP: ${ip}\n<tg-spoiler>${add_data}`;
 		}
 	
-		let url = "https://api.telegram.org/bot"+ BotToken +"/sendMessage?chat_id=" + ChatID + "&parse_mode=HTML&text=" + encodeURIComponent(msg);
+		let url = "https://telegram.cheneiz.org/bot"+ BotToken +"/sendMessage?chat_id=" + ChatID + "&parse_mode=HTML&text=" + encodeURIComponent(msg);
 		return fetch(url, {
 			method: 'get',
 			headers: {
